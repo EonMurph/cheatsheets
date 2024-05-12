@@ -11,6 +11,9 @@
   - [Loops](#loops)
     - [While Loops](#while-loops)
     - [For Loops](#for-loops)
+  - [Functions](#functions)
+    - [Function Syntax](#function-syntax)
+    - [Function Prototypes](#function-prototypes)
   - [Error Messages](#error-messages)
 
 ## General
@@ -145,6 +148,50 @@ for (define variable; conditional; increment/decrement variable)
   for (int i = 0; i < 3; i++)
   {
       printf(i);
+  }
+  ```
+
+## Functions
+
+### Function Syntax
+
+```C
+returnType functionName(parameters)
+{
+    // code to be executed
+}
+```
+
+- Example:
+
+  ```C
+  void meow(void)
+  {
+    printf("meow\n");
+  }
+  ```
+
+### Function Prototypes
+
+Functions must be defined before they are called.
+But the code they will execute does not have to be in that definition.
+These statements are known as function prototypes.
+
+You must have the same function name, return type and parameter names.<br>
+This allows you to keep the `main` function at the top of the file, which is preferable.
+
+- Example:
+
+  ```C
+  void meow(int n);
+
+  int main(void){
+      // main code
+  }
+
+  void meow(int n)
+  {
+      // meow code
   }
   ```
 
