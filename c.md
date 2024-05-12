@@ -10,6 +10,7 @@
     - [Logical Operations](#logical-operations)
   - [Loops](#loops)
     - [While Loops](#while-loops)
+    - [For Loops](#for-loops)
   - [Error Messages](#error-messages)
 
 ## General
@@ -58,7 +59,7 @@
   ```C
   if (x)
   {
-
+      // code to be executed
   }
   ```
 
@@ -67,11 +68,11 @@
   ```C
   if (x)
   {
-
+      // code to be executed
   }
   else
   {
-
+      // code to be executed
   }
   ```
 
@@ -80,15 +81,15 @@
   ```C
   if (x)
   {
-
+      // code to be executed
   }
   else if (y)
   {
-
+      // code to be executed
   }
   else
   {
-
+      // code to be executed
   }
   ```
 
@@ -106,9 +107,46 @@ The syntax is as follows:
 ```C
 while (conditional)
 {
-  // code to execute
+    // code to be executed
 }
 ```
+
+- Example:
+
+  ```C
+  int i = 3;
+  while (i > 0)
+  {
+    printf(i);
+  }
+  ```
+
+- You can create a forever loop with the following:
+
+  ```C
+  while (true)
+  {
+      // code to be executed
+  }
+  ```
+
+### For Loops
+
+```C
+for (define variable; conditional; increment/decrement variable)
+{
+    // code to be executed
+}
+```
+
+- Example:
+
+  ```C
+  for (int i = 0; i < 3; i++)
+  {
+      printf(i);
+  }
+  ```
 
 ## Error Messages
 
