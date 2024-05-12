@@ -171,6 +171,16 @@ returnType functionName(parameters)
   }
   ```
 
+To return a value just use the `return` keyword,
+e.g.
+
+```C
+int add(int a, int b)
+{
+    return a + b;
+}
+```
+
 ### Function Prototypes
 
 Functions must be defined before they are called.
