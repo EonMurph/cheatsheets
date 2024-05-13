@@ -12,6 +12,7 @@
     - [Logical Operations](#logical-operations)
   - [Loops](#loops)
     - [While Loops](#while-loops)
+      - [Do While Loops](#do-while-loops)
     - [For Loops](#for-loops)
   - [Functions](#functions)
     - [Function Syntax](#function-syntax)
@@ -166,6 +167,36 @@ while (conditional)
       // code to be executed
   }
   ```
+
+#### Do While Loops
+
+This type of loop is used when you want a while loop for something such as ensuring a user inputs a valid input.
+
+An example would be when asking for a positive integer.
+
+Without `do while`:
+
+```C
+int n = // get input
+while (n < 0)
+{
+  n = // get input
+}
+```
+
+With `do while`:
+
+```C
+int n;
+do
+{
+  n = // get input
+} while (n < 0);
+```
+
+When using a `do while` loop you must declare the variable being used, in this case `n` before the `do` loop.<br>
+This is due to the scope of the `do` loop.
+If defined within `do` then it would not be accessible by the `while`.
 
 ### For Loops
 
