@@ -2,7 +2,9 @@
 
 - [C Cheat Sheet](#c-cheat-sheet)
   - [General](#general)
+    - [Arithmetic Operators](#arithmetic-operators)
   - [Variables](#variables)
+    - [Type Casting](#type-casting)
   - [Basic Function Calls](#basic-function-calls)
     - [`printf(string, placeholders)`](#printfstring-placeholders)
       - [Format Codes for Printing](#format-codes-for-printing)
@@ -26,18 +28,47 @@
 - All strings must be encased in `"`; whereas single characters are encased in `'`.
 - A comment is denoted by `// your comment`
 
+### Arithmetic Operators
+
+- `+` - addition
+- `-` - subtraction
+- `*` - multiplication
+- `/` - division
+- `%` - modulo (get the remainder after division)
+
 ## Variables
 
 - All variables must start with a datatype.
   - The common types are the following:
-    - `char` - A single character
-      <sub><sup>(P.S a string can be defined as such: `char greeting[] = "Hello World!"`)</sup></sub>
-    - `int` - Whole numbers, both positive and negative
-    - `float` - Floating-point numbers
-    - `double` - Similar to `float` but occupies more storage space
-      allowing for greater accuracy of decimals
+    - `char` (1 byte) - A single character
+      <sub><sup>(P.S a string can be defined as such: `char greeting[] = "Hello World!"`)</sup></sub><br><br>
+
+    - `int` (2/4 bytes) - Whole numbers, both positive and negative
+    - `long` (4/8 bytes) - Increase the range of `int`
+
+    - `float` (4 bytes) - Floating-point numbers
+    - `double` (8 bytes) - Similar to `float` but occupies more storage space
+      allowing for greater accuracy of decimals<br><br>
+
     - `void` - Absence of type,
       used most often for functions that return no value
+- You can turn a variable into a constant by using the keyword `const`:
+  - `const int n = 3`
+
+### Type Casting
+
+You can cast a variable of one type to another by placing the desired data type in front of the variable name,
+with the data type surrounded by `()`.
+
+- Example:
+
+  ```C
+  int x = 1;
+  int y = 3;
+
+  printf("%i", x / y); // Output: 0
+  printf("%f", (float)x, (float)y); // Output: 0.333...
+  ```
 
 ## Basic Function Calls
 
@@ -52,8 +83,11 @@
 - `%c` for `char`
 - `%s` for strings
 - `%i` for `int`
-- `%f` for `float`
+- `%li` for `long`
+
+- `%f` for `float` or `double`
 - `%lf` for `double`
+  - for floats you can add a `.n` before the `f` or `lf`, where `n` is the number of decimal points you want.
 
 ## Conditionals
 
