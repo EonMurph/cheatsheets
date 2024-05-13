@@ -76,6 +76,9 @@ while this is not the same for the relative path.
 
 Add `-?` or `--help` after any command to get the documentation for that command.
 
+You can press the `<UP-ARROW>` and `<DOWN-ARROW>` to go back and forth, respectively, in the command history.
+You can press `<TAB>` to autocomplete the command.
+
 ### Interacting with Items
 
 - `mv` - Move item
